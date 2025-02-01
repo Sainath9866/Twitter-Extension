@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Twitter Content Filter",
+    "version": "1.0",
+    "description": "Filters potentially inappropriate content on Twitter",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://twitter.com/*", "https://x.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
